@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Şule Kosanoğlu, UI/UX designer.">
+<meta property="og:title" content="Şule Kosanoğlu — UI/UX Designer">
+<meta property="og:description" content="Portfolio of Şule Kosanoğlu, UI/UX designer.">
+<meta property="og:image" content="images/tattoo-cover.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%8F%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<title>Şule Kosanoğlu — UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#15181E; --muted:#5E6573; --line:#DDE0E6; --accent:#2F4BFF; --on-accent:#fff;
+  --font:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#101216;--surface:#181B21;--ink:#ECEEF2;--muted:#9AA1AE;--line:#2A2E37;--accent:#7C90FF;--on-accent:#101216}
+}
+:root[data-theme="dark"]{--bg:#101216;--surface:#181B21;--ink:#ECEEF2;--muted:#9AA1AE;--line:#2A2E37;--accent:#7C90FF;--on-accent:#101216}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+header .name{font-weight:700;text-decoration:none}
+nav{display:flex;gap:24px}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 88px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 28px;max-width:16ch;font-weight:700}
+.hero p{max-width:52ch;color:var(--muted);font-size:1.15rem;margin:0 0 32px}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:500}
+.btn:hover{opacity:.9}
+h2{font-size:1.5rem;letter-spacing:-.01em;margin:0 0 32px}
+.work{padding-bottom:64px}
+.project{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding:40px 0;border-top:1px solid var(--line)}
+.project:nth-child(even) .shot{order:2}
+.shot{aspect-ratio:4/3;border-radius:14px;background:var(--surface);border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;text-align:center;padding:16px;overflow:hidden}
+.shot img,.shot video{width:100%;height:100%;object-fit:cover;display:block}
+.project h3{font-size:1.6rem;letter-spacing:-.02em;margin:0 0 6px}
+.project .role{color:var(--accent);font-size:15px;font-weight:500;margin:0 0 14px}
+.project p{margin:0 0 16px;color:var(--muted);max-width:44ch}
+.project a.more{font-weight:500}
+.about{border-top:1px solid var(--line);padding:56px 0;display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+.about p{margin:0 0 16px;max-width:56ch}
+.skills{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.skills li{border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:14px;color:var(--muted)}
+.contact{border-top:1px solid var(--line);padding:64px 0 48px}
+.contact a.mail{font-size:clamp(1.6rem,5vw,2.8rem);letter-spacing:-.02em;font-weight:700;text-decoration-thickness:2px;text-underline-offset:6px}
+.contact ul{list-style:none;padding:0;margin:28px 0 0;display:flex;gap:24px;flex-wrap:wrap;color:var(--muted)}
+footer{color:var(--muted);font-size:14px;padding-bottom:32px}
+@media (max-width:720px){
+  .project,.about{grid-template-columns:1fr;gap:20px}
+  .project:nth-child(even) .shot{order:0}
+  .hero{padding:40px 0 56px}
+}
+.shot.has{aspect-ratio:16/9;border:0;background:#0d0d0d}
+.case{padding:24px 0 64px}
+.case .back{display:inline-block;color:var(--muted);text-decoration:none;margin-bottom:32px}
+.case .back:hover{color:var(--ink)}
+.case h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.08;letter-spacing:-.03em;margin:0 0 12px;max-width:18ch}
+.case .role{color:var(--accent);font-weight:500;margin:0 0 20px}
+.case .intro{color:var(--muted);font-size:1.15rem;max-width:56ch;margin:0 0 48px}
+.case .stack{display:flex;flex-direction:column;gap:20px}
+.case .stack img{width:100%;height:auto;display:block;border-radius:12px}
+.case .ph{aspect-ratio:16/10;border:1px dashed var(--line);border-radius:12px;background:var(--surface);display:grid;place-items:center;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="name" href="#top">Şule Kosanoğlu</a>
+    <nav aria-label="Main"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <h1>I design products people understand at a glance.</h1>
+      <p>I’m a UI/UX Designer who enjoys building clear, simple and meaningful digital experiences. I focus on understanding users, shaping flows and designing interfaces that feel intuitive and balanced.</p>
+      <a class="btn" href="#work">See my work</a>
+    </section>
+
+    <section class="work" id="work">
+      <h2>Selected work</h2>
+
+      <article class="project">
+        <div class="shot">[AI Tattoo Generator: screen recording or image]</div>
+        <div>
+          <h3>AI Tattoo Generator Mobile App</h3>
+          <p class="role">Mobile app design · 2025</p>
+          <p>InkGen.ai turns a tattoo idea into a design with prompt guidance, style filters and AR try-on previews. I designed the full flow, from onboarding and prompt to generation, editing, community and paywall.</p>
+          <a class="more" href="#tattoo-app">Read the case study</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="shot">[Habit Tracker: screen recording or image]</div>
+        <div>
+          <h3>Wellness and Flexible Habit Tracker App</h3>
+          <p class="role">UX research and UI design</p>
+          <p>Vita is a wellness app built around flexibility instead of rigid streaks. I interviewed users, mapped their frustrations and designed features like rescheduling and mood logging that keep routines going when life gets busy.</p>
+          <a class="more" href="#habit-tracker">Read the case study</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="shot">[EV Dashboard: screen recording or image]</div>
+        <div>
+          <h3>EV Charging Management Dashboard</h3>
+          <p class="role">Dashboard design</p>
+          <p>A dashboard for managing EV charging stations and sessions. I focused on making complex status and usage information easy to scan and act on.</p>
+          <a class="more" href="#ev-dashboard">Read the case study</a>
+        </div>
+      </article>
+      <article class="project">
+        <div class="shot">[Chargesquare: screen recording or image]</div>
+        <div>
+          <h3>ChargeSquare: EV Charging App Redesign</h3>
+          <p class="role">UI/UX redesign</p>
+          <p>A UI/UX redesign of ChargeSquare, an EV charging app for finding, navigating to and paying for stations. I redesigned the Home, Station Detail and Map screens so every element earns its place and the app feels like one consistent system.</p>
+          <a class="more" href="#chargesquare">Read the case study</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <div>
+        <p>My work spans mobile apps and dashboards, from early research to the final interface. I start by understanding who a product is for and what they are trying to do, then shape the flow before polishing the screens. I care about clarity: every element should earn its place, and the whole should feel balanced.</p>
+        <p>I also use AI tools in my process, from exploring ideas to building quick prototypes. I set the direction, make the decisions and judge the result.</p>
+        <ul class="skills" aria-label="Skills">
+          <li>User research</li><li>Interaction design</li><li>Prototyping</li><li>Design systems</li><li>Vibe coding</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let’s work together</h2>
+      <a class="mail" href="mailto:sulekosanogluu@gmail.com">sulekosanogluu@gmail.com</a>
+      <ul><li><a href="https://www.linkedin.com/in/şule-kosanoğlu-16a589182" target="_blank" rel="noopener">LinkedIn</a></li><li><a href="https://www.behance.net/ulekosanolu" target="_blank" rel="noopener">Behance</a></li></ul>
+    </section>
+  </main>
+  <main id="case" class="case" hidden></main>
+
+  <footer>© 2026 Şule Kosanoğlu</footer>
+</div>
+<script>
+(function(){
+  var P={
+    "tattoo-app":{t:"AI Tattoo Generator Mobile App",r:"Mobile app design · 2025",i:"InkGen.ai turns a tattoo idea into a design with prompt guidance, style filters and AR try-on previews. I designed the full flow, from onboarding and prompt to generation, editing, community and paywall.",cv:"images/tattoo-cover.jpg",img:["images/tattoo-01.jpg","images/tattoo-02.jpg","images/tattoo-03.jpg","images/tattoo-04.jpg","images/tattoo-05.jpg","images/tattoo-06.jpg","images/tattoo-07.jpg","images/tattoo-08.jpg","images/tattoo-09.jpg","images/tattoo-10.jpg","images/tattoo-11.jpg","images/tattoo-12.jpg","images/tattoo-13.jpg","images/tattoo-14.jpg","images/tattoo-15.jpg","images/tattoo-16.jpg"]},
+    "habit-tracker":{t:"Wellness and Flexible Habit Tracker App",r:"UX research and UI design",i:"Vita is a wellness app built around flexibility instead of rigid streaks. I interviewed users, mapped their frustrations and designed features like rescheduling and mood logging that keep routines going when life gets busy.",cv:"images/vita-cover.jpg",img:["images/vita-01.jpg","images/vita-02.jpg","images/vita-03.jpg","images/vita-04.jpg","images/vita-05.jpg","images/vita-06.jpg","images/vita-07.jpg","images/vita-08.jpg","images/vita-09.jpg","images/vita-10.jpg"]},
+    "ev-dashboard":{t:"EV Charging Management Dashboard",r:"Dashboard design",i:"A dashboard for managing EV charging stations and sessions. I focused on making complex status and usage information easy to scan and act on.",cv:"images/ev-dashboard-cover.jpg",img:["images/ev-dashboard-01.jpg"]},
+    "chargesquare":{t:"ChargeSquare: EV Charging App Redesign",r:"UI/UX redesign",i:"A UI/UX redesign of ChargeSquare, an EV charging app for finding, navigating to and paying for stations. I redesigned the Home, Station Detail and Map screens so every element earns its place and the app feels like one consistent system.",cv:"images/chargesquare-cover.jpg",img:["images/chargesquare-01.jpg","images/chargesquare-02.jpg","images/chargesquare-03.jpg","images/chargesquare-04.jpg","images/chargesquare-05.jpg","images/chargesquare-06.jpg","images/chargesquare-07.jpg"]}
+  };
+  var home=document.getElementById("top"),c=document.getElementById("case");
+  function esc(s){return String(s).replace(/[&<>"]/g,function(m){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]})}
+  function show(){
+    var k=location.hash.slice(1),p=P[k];
+    if(!p){
+      c.hidden=true;home.hidden=false;
+      var e=k&&document.getElementById(k);
+      if(e){e.scrollIntoView()}else{window.scrollTo(0,0)}
+      return;
+    }
+    var body="";
+    if(p.img.length){
+      p.img.forEach(function(s,n){body+='<img src="'+esc(s)+'" alt="'+esc(p.t)+' screen '+(n+1)+'" loading="lazy">'});
+    }else{
+      for(var n=1;n<=4;n++){body+='<div class="ph">[Add case study image '+n+']</div>'}
+    }
+    c.innerHTML='<a class="back" href="#work">\u2190 Back to work</a><h1>'+esc(p.t)+'</h1><p class="role">'+esc(p.r)+'</p><p class="intro">'+esc(p.i)+'</p><div class="stack">'+body+'</div>';
+    home.hidden=true;c.hidden=false;window.scrollTo(0,0);
+  }
+  Object.keys(P).forEach(function(k){var p=P[k];if(!p.img.length)return;var a=document.querySelector('a.more[href="#'+k+'"]');var s=a&&a.closest("article").querySelector(".shot");if(s){s.className="shot has";s.innerHTML='<img src="'+(p.cv||p.img[p.th||0])+'" alt="'+esc(p.t)+'">'}});
+  window.addEventListener("hashchange",show);
+  show();
+})();
+</script>
+</body>
+</html>
